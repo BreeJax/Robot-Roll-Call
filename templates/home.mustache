@@ -32,6 +32,29 @@
       </li>
       {{/users}}
     </ul>
+    <form class="newRobot" action="/robot" method="post">
+      <h3>New Robot Information</h3>
+      <input type="text" name="username" placeholder="username" value="{{username}}" required>
+      <input type="text" name="imagery" placeholder="image URL here" value="{{imagery}}" required>
+      <input type="email" name="email" placeholder="Email" value="{{email}}">
+      <input type="text" name="university" placeholder="University" value="{{university}}">
+      <input type="text" name="street-number" placeholder="street-number" value="{{street-number}}">
+      <input type="text" name="address" placeholder="street-name" value="{{address}}">
+      <input type="text" name="city" placeholder="city" value="{{city}}">
+      <input type="text" name="state" placeholder="state" value="{{state}}">
+      <input type="text" name="postal_code" placeholder="postal_code" value="{{postal_code}}">
+      <input type="text" name="job" placeholder="job" value="{{job}}">
+      <input type="text" name="company" placeholder="company" value="{{company}}">
+      <input type="text" name="year_built" placeholder="Year Created" value="{{year_built}}">
+      <input type="text" name="next_service_date" placeholder="Year-Month-Day" value="{{next_service_date}}">
+        <div class="">
+        <h4>Is the Robot Active?</h4>
+          <input type="radio" name="is_active" id="true" value="{{TRUE}}">
+          <label for="true">Yes</label>
+          <input type="radio" name="is_active" id="false" value="{{FALSE}}">
+          <label for="false">No</label>
+        </div>
+    </form>
 
   </body>
 </html>
